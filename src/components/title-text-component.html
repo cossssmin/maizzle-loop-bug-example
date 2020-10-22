@@ -1,0 +1,29 @@
+<table class="w-full">
+  <tr>
+    <td class="p-4 bg-green-100">
+      <table class="w-full">
+        <if condition="items">
+          <each loop="item, index in items">
+            
+            <!-- rendering single items -->
+            <tr>
+              <table class="w-full">
+                <tr>
+                  <td>
+                    {{ item.title }}
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    {{ item.text }}
+                  </td>
+                </tr>
+              </table>
+            </tr>
+
+          </each>
+        </if>
+      </table>
+    </td>
+  </tr>
+</table>
