@@ -2,9 +2,9 @@
   <tr>
     <td class="p-4 bg-green-100">
       <table class="w-full">
-        <if condition="items">
-          <each loop="item, index in items">
-            
+        <if condition="page.dataFromConfig">
+          <each loop="item, index in page.dataFromConfig">
+
             <!-- rendering single items -->
             <tr>
               <table class="w-full">
